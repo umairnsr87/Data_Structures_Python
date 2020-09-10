@@ -11,6 +11,11 @@ class Linkedlist:
             print(printval.dataval)
             printval=printval.nextval
 
+    def insertatfront(self,newdata):
+        newnode=Node(newdata)
+        newnode.nextval=self.headval
+        self.headval=newnode
+
 #creating the object of linkedlist and setting it to First created Node
 list1=Linkedlist()
 list1.headval=Node("Mon")
@@ -23,6 +28,12 @@ e3=Node("Wed")
 list1.headval.nextval=e2
 #link 2nd node to third
 e2.nextval=e3
+
+#traversion the linked list
+list1.listtraverse()
+print()
+
+list1.insertatfront("Sun")
 
 #traversion the linked list
 list1.listtraverse()
