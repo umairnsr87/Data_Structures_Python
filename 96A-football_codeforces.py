@@ -12,15 +12,6 @@ for i in range(len(x)):
         break
 
 
-    # if i+1==len(x):
-    # if x[i]==x[i-1]:
-    #     counter+=1
-    # else:
-    #     counter=1
-# print("NO")
-#         elif i+1<len(x):
-#             if x[i]==x[i+1]:
-#                 counter+=1
 if a>=7 or b>=7:
     print("YES")
 else:
