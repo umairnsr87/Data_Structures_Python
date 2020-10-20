@@ -7,3 +7,10 @@ if x%2==0:
     print( temp )
 else:
     print(-1)
+
+
+
+
+
+
+
