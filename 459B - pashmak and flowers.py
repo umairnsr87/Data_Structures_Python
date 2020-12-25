@@ -1,27 +1,14 @@
 num_flowers=int(input())
+s=input().split()
 
-flowers=[]
+for temp in range(len(s)):
+    s[temp]=int(s[temp])
 
-for i in range(num_flowers):
-    flowers.append(int(input()))
-
-
-maximum=flowers[0]
-minimum=flowers[0]
-counter1=0
-counter2=0
-
-for i in range(len(flowers)):
-    if flowers[i]>maximum:
-        maximum=flowers[i]
-
-    if flowers[i]<minimum:
-        minimum=flowers[i]
-
-for i in range(len(flowers)):
-    if flowers[i]==maximum:
-        counter1+=1
-    if flowers[i]==minimum:
-        counter2+=1
-
-print(str(maximum-minimum)+" "+str(counter1*counter2))
+t=max(s)
+# print(t)
+l=min(s)
+# print(l)
+if t!=l:
+    print (t-l,s.count(t)*s.count(l))
+else:
+    print (0,num_flowers*(num_flowers-1)//2)
