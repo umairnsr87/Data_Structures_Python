@@ -1,4 +1,4 @@
-    def f():
+def f():
         n = int(input()) // 3
         t = input()
         if '5' in t: return -1
@@ -12,4 +12,4 @@
         f = t.count('6')
         if f < c: return -1
         return '1 2 4\n' * d + '1 3 6\n' * c + '1 2 6\n' * (n - d - c)
-    print(f())
+print(f())
