@@ -16,6 +16,6 @@ total_numbers=int(input())
 # sol:2
 for i in range(total_numbers):
     a,b=map(int,input().split())
-    print((b - a % b) % b);
+    print((b - a % b) % b)
 
 
