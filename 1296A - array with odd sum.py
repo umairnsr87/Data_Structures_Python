@@ -11,12 +11,7 @@ for _ in range(test):
         else:
             even+=1
 
-    if (odd==n and n%2!=0 ) :
-        print("YES")
-    else:
+    if ((odd==n and n%2==0) or even==n):
         print("NO")
-    
-    # if ((odd==n and n%2==0) or even==n):
-    #     print("NO")
-    # else:
-    #     print("YES")
+    else:
+        print("YES")
